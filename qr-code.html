@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hema AR Navigation - QR Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .qr-container {
+            margin: 30px 0;
+        }
+        .qr-code {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+        .qr-code img {
+            max-width: 100%;
+        }
+        .instructions {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #e60000; /* Hema red */
+        }
+        .logo {
+            max-width: 150px;
+            margin: 20px 0;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="assets/images/hema-logo.png" alt="Hema Logo" class="logo">
+    <h1>Hema AR Navigation</h1>
+    <p>Scan this QR code with your smartphone to experience the interactive AR store navigation</p>
+    
+    <div class="qr-container">
+        <div class="qr-code">
+            <p>QR code will be generated when deployed</p>
+            <!-- QR code will be inserted here when the application is deployed -->
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <h2>How to use:</h2>
+        <ol>
+            <li>Scan the QR code with your smartphone camera</li>
+            <li>Open the link in your web browser</li>
+            <li>Allow camera permissions when prompted</li>
+            <li>Choose your preferred language (English or Dutch)</li>
+            <li>Point your camera at a flat surface and tap "Place Store"</li>
+            <li>Select a department to see navigation arrows</li>
+            <li>Follow the arrows to reach your destination</li>
+        </ol>
+    </div>
+    
+    <p class="note">Note: This AR experience works best on modern smartphones with AR capabilities in a well-lit environment.</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hema Store AR Navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="loading">
+            <div class="spinner"></div>
+            <div id="loading-text">Loading...</div>
+        </div>
+        
+        <div id="permission-request" style="display: none;">
+            <div class="content">
+                <img src="assets/images/hema-logo.png" alt="Hema Logo" id="logo">
+                <h2 id="permission-title">AR Store Navigation</h2>
+                <p id="permission-text">Experience an interactive guide through the Hema store</p>
+                <button id="start-button">Start Experience</button>
+                <div id="language-selector">
+                    <button id="lang-en" class="lang-btn active">English</button>
+                    <button id="lang-nl" class="lang-btn">Nederlands</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="placement-ui" style="display: none;">
+            <div class="content">
+                <p id="placement-instructions">Point your camera at the floor and tap to place the store guide</p>
+                <button id="place-button">Place Store</button>
+            </div>
+        </div>
+        
+        <div id="navigation-ui" style="display: none;">
+            <div id="destination-buttons">
+                <button class="destination-btn" data-destination="checkout">
+                    <span class="en">Checkout</span>
+                    <span class="nl">Kassa</span>
+                </button>
+                <button class="destination-btn" data-destination="offers">
+                    <span class="en">Special Offers</span>
+                    <span class="nl">Aanbiedingen</span>
+                </button>
+                <button class="destination-btn" data-destination="sausage">
+                    <span class="en">Smoked Sausage</span>
+                    <span class="nl">Rookworst</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="zappar-container"></div>
+</body>
+</html>
